@@ -1,0 +1,220 @@
+mixin pageHeader(tituloTema, srcImagen, pagina)
+
+    .curso-portada
+
+        .row.align-items-center
+
+            .col-12.col-lg-6
+
+                h3#curso-titulo-componente.curso-subtitulo TECNOLOGÍA EN DESARROLLO DE PROCESOS DE MERCADO
+                h1#curso-titulo-tema.curso-titulo Mezcla de producto
+                
+                .brand-line-primaryOrientar
+
+                if pagina == 'main'
+
+                    .keywords
+                        span.badge.badge-pill.badge-light.mr-2 #Características
+                        span.badge.badge-pill.badge-light.mr-2 #Producto
+                        span.badge.badge-pill.badge-light.mr-2 #Servicios
+                      
+
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+                    p.curso-descripcion A través del componente formativo mezcla de producto el aprendiz debe apropiar los elementos de entrada requeridos para la elaboración de prototipo de producto para su idea de negocio o proyecto productivo. 
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-danger(href="main.html")
+                        span Iniciar curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
+
+
+mixin navTemaItem(numero, titulo, ruta)
+    li.list-group-item.nav-tema-item
+        .row.align-items-center
+            if numero == 'play'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-play
+            else if numero == 'question'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-question
+            else if numero == 'text'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
+            else
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+
+            .col.ml-n2
+                span.nav-tema-item__titulo 
+                    a(href= ruta)= titulo
+            .col-auto                                            
+                a(href= ruta).btn.btn-light.nav-tema-item__btn
+                    | Ver más
+    
+    
+mixin creditosFooter(ruta)
+    footer#Creditos.footer
+        .container
+
+            h1 Créditos
+            .brand-line-primary
+
+            .row
+                .col-12.col-md-5
+                    h3.footer-subtitulo.mb-4 ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES
+
+                    p.footer-texto.mb-2
+                        | #[strong Ingry Dayanna Bonilla Monzon]<br/>
+                        span.text-small Líder del equipo
+
+            .row.mt-5
+                .col-12.col-md-6
+                    h4.footer-subtitulo-2.mt-0
+                        .fa.fa-caret-right.mr-2
+                        | Contenido Instruccional
+
+                    p.footer-texto.mb-2
+                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>
+                        span.text-small Responsable del equipo
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Comercio y Servicios
+                        br
+                        span.text-small Regional Tolima
+
+                    p.footer-texto.mb-2
+                        | #[strong Rafael Neftalí Lizcano Reyes]<br/>
+                        span.text-small Asesor pedagógico<br/>
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA
+                        br
+                        span.text-small Regional Santander
+                    p.footer-texto.mb-2
+                        | #[strong Claudia Juliana León Pinto]<br/>
+                        span.text-small Experta tematica<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Gestión Industrial
+                        br
+                        span.text-small Regional Santander
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Alix Cecilia Chinchilla Rueda]<br/>
+                        span.text-small Diseñadora Instruccional <br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Gestión Industrial
+                        br
+                        span.text-small Regional Distrito Capital
+
+
+                    p.footer-texto.mb-2
+                        | #[strong Jesús Libardo Acero]<br/>
+                        span.text-small Evaluador instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Diseño y metrología
+                        br
+                        span.text-small Regional Distrito Capital
+
+                    p.footer-texto.mb-2
+                        | #[strong Julieth Paola Vital López]<br/>
+                        span.text-small Revisora de estilo<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
+                        br
+                        span.text-small Regional Distrito Capital
+
+
+                .col-12.col-md-6
+                    h4.footer-subtitulo-2.mt-0
+                        .fa.fa-caret-right.mr-2
+                        | Diseño y desarrollo de recursos educativos digitales
+
+                    p.footer-texto
+                        | #[strong Francisco José Lizcano Reyes ]<br/>
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto
+                        | #[strong Leyson Fabian Castaño Perez]<br/>
+                        span.text-small Integración de recursos y pruebas<br/>
+
+                    p.footer-texto
+                        | #[strong Daniel Ricardo Mutis Gómez]<br/>
+                        | #[strong José Jaime Luis Tang Pinzón]<br/>
+                        span.text-small Diseño web & producción audiovisual<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA
+                        br
+                        span.text-small Regional Santander
+
+                    h4.footer-subtitulo-2.mt-5
+                        .fa.fa-caret-right.mr-2
+                        | Gestor de repositorio
+
+                    p.footer-texto
+                        | #[strong Ricardo Alfonso Gonzalez Vargas]<br/>
+                        span.text-small Desarrollo front-end<br/>
+                        span.text-small Validación de recursos.<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de comercio y servicios
+                        br
+                        span.text-small Regional Tolima
+
+
+
+            .row.justify-content-center.align-items-center.mt-5
+                    img(src= ruta, style="max-width:100px")
+
+    section#cc
+        .container
+            .d-flex.flex-column.flex-sm-row
+                span.pr-3
+                    i.icon.cc
+            
+                span
+                    | Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que
+                    | el trabajo original.
