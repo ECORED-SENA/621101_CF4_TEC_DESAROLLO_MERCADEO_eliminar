@@ -36,14 +36,16 @@ html(lang="es")
                             .card-body
 
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
-                                    +navTemaItem('1', 'Mezcla producto.', '#tema1_1')
+                                    +navTemaItem('1', 'Mezcla producto.', '#tema-1')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
                                     
 
 
         section#mainContent         
             #tema-1
-                include pages/1-tema.pug
-                                     
+                include pages/1-tema.pug   
             #glosario
                 include pages/glosario.pug
             #anexos
