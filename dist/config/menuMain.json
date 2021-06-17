@@ -1,0 +1,128 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },  
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "mezcla",
+    "title": "1. Mezcla de producto",
+    "breadcrumb": ["Inicio","Tema 1"],
+    "path": "pages/1-tema.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.1. Producto",
+        "anchor": "tema1_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.1.1. Atributos",
+        "anchor": "tema1_1_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.1.2. Ciclo de vida",
+        "anchor": "tema1_1_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.2. Servicios",
+        "anchor": "tema1_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.2.1. Experiencias",
+        "anchor": "tema1_2_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.2.2. Características",
+        "anchor": "tema1_2_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.3. Marca",
+        "anchor": "tema1_3"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.3.1. Branding",
+        "anchor": "tema1_3_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.3.2. Posicionamiento",
+        "anchor": "tema1_3_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.4. Envase",
+        "anchor": "tema1_4"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.5. Empaque.",
+        "anchor": "tema1_5"
+      },
+      {
+        "icon": "fa fa-play-circle",
+        "slug": "mezcla",
+        "title": "1.6. Embalaje.",
+        "anchor": "tema1_6"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.7. Etiqueta",
+        "anchor": "tema1_7"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.7.1. Códigos barras",
+        "anchor": "tema1_7_1"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.7.2. Etiqueta RFID",
+        "anchor": "tema1_7_2"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.8. Marketing Green",
+        "anchor": "tema1_8"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.9. Marketing Social",
+        "anchor": "tema1_9"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "mezcla",
+        "title": "1.10. Normativa",
+        "anchor": "tema1_10"
+      }
+    ]
+  }
+  
+]
+
